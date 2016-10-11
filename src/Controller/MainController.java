@@ -1,10 +1,10 @@
-package Controller;
+package controller;
 
-import DAO.ProjectDAO;
-import View.MainMenu;
-import View.MenuAddProject;
-import View.MenuDeleteProject;
-import View.ViewAllProjects;
+import dao.ProjectDAO;
+import view.MainMenu;
+import view.MenuAddProject;
+import view.MenuDeleteProject;
+import view.ViewAllProjects;
 
 import java.util.Scanner;
 
