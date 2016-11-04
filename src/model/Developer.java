@@ -1,31 +1,39 @@
 package model;
 
 public class Developer {
-    int idDeveloper;
-    String nameDeveloper;
-    String speciality;
-    int salary;
+    private int id;
+    private String nameDeveloper;
+    private String speciality;
+    private int salary;
+
+    public Developer(){}
 
     public Developer(int id, String name, String speciality, int salary) {
-        this.idDeveloper = id;
+        this.id = id;
+        this.nameDeveloper = name;
+        this.speciality = speciality;
+        this.salary = salary;
+    }
+
+    public Developer(String name, String speciality, int salary) {
         this.nameDeveloper = name;
         this.speciality = speciality;
         this.salary = salary;
     }
 
     public int getId() {
-        return idDeveloper;
+        return id;
     }
 
     public void setId(int id) {
-        this.idDeveloper = id;
+        this.id = id;
     }
 
-    public String getName() {
+    public String getNameDeveloper() {
         return nameDeveloper;
     }
 
-    public void setName(String name) {
+    public void setNameDeveloper(String name) {
         this.nameDeveloper = name;
     }
 
@@ -47,13 +55,8 @@ public class Developer {
 
     @Override
     public String toString() {
-        System.out.printf("\t\t\tidDeveloper=%d , nameDeveloper=%-20s , \tspeciality=%-10s , \tsalary=%d \r\n",
-                idDeveloper, nameDeveloper, speciality, salary);
-        return "";//System.out.printf("\t\t\tidDeveloper=$n , nameDeveloper=$-20s , \tspeciality=$-10s , \tsalary=$n \r\n",
-//                idDeveloper, nameDeveloper, speciality, salary);;
+        System.out.printf("\t\t\tid=%d , nameDeveloper=%-20s , \tspeciality=%-10s , \tsalary=%d \r\n",
+                id, nameDeveloper, speciality, salary);
+        return "";
     }
 }
-//"\t\t\tidDeveloper=" + idDeveloper +
-//        ", nameDeveloper='" + nameDeveloper + '\'' +
-//        ", \tspeciality='" + speciality + '\'' +
-//        ", \tsalary=" + salary + "\r\n";
