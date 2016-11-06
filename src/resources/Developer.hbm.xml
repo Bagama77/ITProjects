@@ -12,7 +12,7 @@
         </id>
         <property name="nameDeveloper" column="name_Developer" type="string"/>
         <property name="speciality" column="speciality" type="string"/>
-        <property name="salary" column="salary" type="string"/>
+        <property name="salary" column="salary" type="int"/>
 
     </class>
 </hibernate-mapping>

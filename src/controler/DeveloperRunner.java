@@ -40,6 +40,7 @@ public class DeveloperRunner {
 
             transaction = session.beginTransaction();
             Developer developer = new Developer(nameDeveloper, speciality, salary);
+            System.out.println("Created developer.." + developer);
             Integer idDeveloper = (Integer) session.save(developer);
             transaction.commit();
             session.close();
